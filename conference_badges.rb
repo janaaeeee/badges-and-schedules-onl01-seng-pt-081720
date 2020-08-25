@@ -21,8 +21,13 @@ def assign_rooms(attendees)
   room
 end
 
+# Now you have to tell the printer what to print. Create a method called `printer` that will output first the results of the `batch_badge_creator` method and then of the `assign_rooms` method to the screen.
+#   * *Hint*: Remember that methods can call other methods. If the return value of `assign_rooms` is an array of room assignments, how can you print out each assignment? You'll need to iterate over your array of room assignments in order to `puts` out each individual assignment.
+
+
 def printer(attendees)
-  "Hello, my name is #{name}."
+  puts batch_badge_creator
+  puts assign_rooms
 end
 
 
